@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>OBJECT AND CLASSES</h2>
+
+<p id="demo"></p>
+
+<script>
+class Car{
+    constructor(name,year){
+        this.name = name;
+        this.year = year;
+    }
+    age(){
+        var date = new Date()
+        return date.getFullYear() - this.year
+    }
+}
+var car1 = new Car("Ford", 2000)
+document.getElementById("demo").innerHTML = " My Car is " + car1.age() + " years old ";
+</script>
+
+</body>
+</html>
